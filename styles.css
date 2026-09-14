@@ -67,7 +67,7 @@ a
     --padding-button: 0.625rem 1rem;
 }
 
-/* Header */
+/* ------------------------------------------------Header----------------------------------------------------------- */
 
 .header{
     position: sticky;
@@ -123,7 +123,7 @@ button:focus-visible{
   padding-inline: 1.5rem;
 }
 
-/* hero */
+/* -----------------------------------------------------------------hero------------------------------------------------- */
 
 .hero-section{
     max-width: 100dvw;
@@ -239,7 +239,7 @@ button:focus-visible{
     margin-right: 6px;
 }
 
-/* features */
+/* -------------------------------------------------features -------------------------------------------------------*/
 
 .features-section{
     background-color: var(--white-color);
@@ -315,7 +315,7 @@ button:focus-visible{
     color: var(--dark-green-color)
 }
 
-/* gallery */
+/* --------------------------------------------------------gallery------------------------------------------------- */
 
 
 .gallery-section{
@@ -337,7 +337,7 @@ button:focus-visible{
     border-radius: 12px;
 }
 
-/* pricing */
+/* -------------------------------------------------pricing------------------------------------------------- */
 
 .pricing-section{
     background-color: var(--white-color);
@@ -351,8 +351,6 @@ button:focus-visible{
     padding-top: 3rem;
     padding-bottom: 6rem;
 }
-
-
 
 .pricing-content h2{
     color: var(--dark-grey-font-color);
@@ -449,7 +447,7 @@ button:focus-visible{
     text-transform: uppercase;
 }
 
-/* footer */
+/* -----------------------------------------------------footer----------------------------------------------*/
 
 .footer-section {
     background-color: var(--dark-green-color);
@@ -474,7 +472,6 @@ button:focus-visible{
 .footer-brand{
     flex: 1 1 20rem;
 }
-
 
 
 .footer-col{
@@ -515,7 +512,7 @@ button:focus-visible{
     border-top: 1px solid var(--white-color);
 }
 
-/* banner */
+/* -------------------------------------------------------banner ------------------------------------------------*/
 
 .fixed-banner{
    position: fixed;
@@ -560,7 +557,8 @@ button:focus-visible{
 
 
 
-/* desktop version */
+/* ---------------------------------------------------desktop version -------------------------------------------*/
+
 @media (min-width: 48rem) {
 
     /* desktop header */
@@ -594,7 +592,7 @@ button:focus-visible{
          color: var(--dark-grey-font-color);
     }
 
-    /* desktop hero */
+    /* ------------------------------------------------desktop hero--------------------------------------- */
 
     .hero-wrapper{
         display: grid;
@@ -626,7 +624,7 @@ button:focus-visible{
         gap: 1rem;
     }
 
-    /* desktop gallery */
+    /* ---------------------------------------------desktop gallery -------------------------------------------*/
 
     .gallery-wrapper{
     display: grid;
@@ -674,7 +672,7 @@ button:focus-visible{
         grid-area: img5;
     }
 
-    /* desktop footer */
+    /* --------------------------------------desktop footer ------------------------------------------*/
     .footer-col{
     flex: 1 1 0rem;
     margin: 0;
@@ -685,7 +683,7 @@ button:focus-visible{
         justify-content: space-between;
     }
 
-
+    /* -----------------------------------------desktop banner --------------------------------------*/
     .banner-wrapper{
         max-width: var(--max-width-desktop);
     }
