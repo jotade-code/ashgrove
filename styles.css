@@ -9,7 +9,7 @@
 
 body{
     margin: 0; 
-    
+
 }
 
 img{
@@ -51,7 +51,8 @@ a
 
     /* jerarquia z */
     --z-banner: 2;
-    --z-header: 1;
+    --z-header: 3;
+    --z-pricing: 1;
 
     --max-width-desktop: 65rem;
 
@@ -62,6 +63,8 @@ a
     --general-inline-padding: 12.5rem;
 
     --banner-height: 2.5rem;
+
+    --padding-button: 0.625rem 1rem;
 }
 
 /* Header */
@@ -93,7 +96,7 @@ button:focus-visible{
 }
 
 .cta-button{
-    padding: 10px 16px;
+    padding: var(--padding-button);
     background-color: var(--buttons);
     color: var(--white-color);
     border-radius: 999px;
@@ -125,6 +128,7 @@ button:focus-visible{
 .hero-section{
     max-width: 100dvw;
     background-color: var(--beige-color);
+    min-height: 100dvh;
 }
 .hero-wrapper{
     padding-inline: 1.5rem;
@@ -148,7 +152,7 @@ button:focus-visible{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px 16px;
+    padding: var(--padding-button);
     border-radius: 999px;
     text-decoration: none;
     font-weight: 600;
@@ -160,7 +164,7 @@ button:focus-visible{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px 16px;
+    padding: var(--padding-button);
     border-radius: 999px;
     text-decoration: none;
     font-weight: 600;
@@ -180,10 +184,10 @@ button:focus-visible{
 }
 
 .decorative-heading{
-    font-size: 12px;
+    font-size: 0.75rem;
     color: var(--dark-green-color);
-    width: 161px;
-    height: 27px;
+    width: 10rem;
+    height: 1.7rem;
     background-color: var(--light-grey-background-color);
     display: flex;
     align-items: center;
@@ -216,10 +220,10 @@ button:focus-visible{
     font-size: 0.75rem;
     font-weight: 600;
     background-color: var(--white-color);
-    padding: 10px 16px;
+    padding: var(--padding-button);
     border-radius: 999px;
-    bottom: -12px;
-    left: -8px;
+    bottom: -0.75rem;
+    left: -0.5rem;
     width: 10.68rem;
     height: 2.19rem;
     box-shadow: var(--shadow)
@@ -255,10 +259,6 @@ button:focus-visible{
     gap: 1.5rem;
 }
 
-.features-card{
-    flex: 1 1 10rem;
-}
-
 
 .features-content h2{
     font-size: 1.875rem;
@@ -274,10 +274,12 @@ button:focus-visible{
 }
 
 .features-card{
-    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
     border: 1px solid var(--beige-color-border);
     border-radius: 12px;
-    margin-bottom: 1rem;
+    flex: 1 1 16rem;
 }
 
 .features-card h3{
@@ -306,6 +308,7 @@ button:focus-visible{
 }
 
 .features-card a{
+    margin-top: auto;
     text-decoration: none;
     font-weight: 600;
     font-size: 0.813rem;
@@ -318,13 +321,11 @@ button:focus-visible{
 .gallery-section{
     background-color: var(--beige-color);
     min-width: 100%;
-}
-.gallery-section{
     margin-inline: auto;
     max-width: var(--max-width-desktop);
     padding-inline: 1.5rem;  
-    padding-top: 64px;
-    padding-bottom: 64px;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 }
 
 
@@ -388,6 +389,7 @@ button:focus-visible{
     border: 2px solid var(--dark-green-color);
     position: relative;
     box-shadow: var(--shadow);
+    z-index: var(--z-pricing);
 }
 
 .pricing-options-wrapper{
@@ -425,6 +427,8 @@ button:focus-visible{
     height: 2.875rem;
     background-color: var(--white-color);
     border: 1.5px solid var(--buttons);
+    margin-top: auto;
+    text-decoration: none;
 }
 
 .pricing-options:nth-child(2) .plan-button{
@@ -435,10 +439,11 @@ button:focus-visible{
 
 .most-popular{
     position: absolute;
-    top: -15px;
-    left: 80px;
+    top:0;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background-color: var(--buttons);
-    padding: 6px 16px;
+    padding: 0.375rem 0.5rem;
     border-radius: 999px;
     color: var(--white-color);
     text-transform: uppercase;
@@ -510,6 +515,7 @@ button:focus-visible{
     border-top: 1px solid var(--white-color);
 }
 
+/* banner */
 
 .fixed-banner{
    position: fixed;
@@ -577,7 +583,7 @@ button:focus-visible{
     .list-bar{
         display: flex;
         align-items: center;
-        gap: 32px;
+        gap: 2rem;
         margin: 0;
         list-style: none;
     }
@@ -606,7 +612,7 @@ button:focus-visible{
     }
 
     .hero-content h1{
-        margin: 24px 0;
+        margin: 1.5rem 0;
     }
 
     .image-hero-wrapper{
@@ -645,7 +651,7 @@ button:focus-visible{
     }
 
     .gallery-image{
-        margin-bottom: 0px;
+        margin-bottom: 0;
     }
 
     .gallery-image:nth-child(1){
